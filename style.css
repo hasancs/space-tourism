@@ -1,0 +1,24 @@
+/*-----------------------------------------------------------------------------------
+  Template Name: Frontend Mentor | Space tourism website
+  Template URI:
+  Author: Mahmudul Hasan
+  Author URI: https://github.com/hasancs/
+  Version: 1.0
+
+  Note: This is Main Style CSS File.
+-----------------------------------------------------------------------------------
+	CSS INDEX
+	===================
+    #. Fonts
+    #. Reset
+    #. Variables
+-----------------------------------------------------------------------------------*/
+
+/* Fonts========== */
+@import url("./css/01-global/fonts.css");
+
+/* Variables========== */
+@import url("./css/01-global/variables.css");
+
+/* Reset========== */
+@import url("./css/01-global/reset.css");

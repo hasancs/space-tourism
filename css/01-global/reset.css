@@ -1,0 +1,68 @@
+/* 03. Reset CSS=========*/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+* {
+	margin: 0;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	display: grid;
+	grid-template-rows: auto 1fr;
+	background-color: hsl(var(--clr-blue-dark));
+	font-size: 1rem;
+	font-family: var(--ff-barlow);
+	font-weight: var(--fw-regular);
+	line-height: 1.5;
+	color: hsl(var(--clr-white));
+}
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* 04. Utility Classes=========*/
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+}
