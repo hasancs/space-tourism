@@ -22,3 +22,6 @@
 
 /* Reset========== */
 @import url("./css/01-global/reset.css");
+
+/* Navigation========== */
+@import url("./css/02-components/navigation.css");

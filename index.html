@@ -11,11 +11,26 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="header">
+    <div class="logo">
+      <a href="index.html"><img src="./img/shared/logo.svg" alt="Space tourism"></a>
+    </div>
+    <!-- Site Logo -->
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <button class="toggleNavigation" id="navbarToggle"><span class="sr-only">Menu</span></button>
+    <!-- Mobile Navigation Toggle -->
+
+    <nav>
+      <ul class="navigation" id="mainMenu">
+        <li class="active"><a href="index.html"><span>00</span> Home</a></li>
+        <li><a href="destination-moon.html"><span>01</span> Destination</a></li>
+        <li><a href="crew-commander.html"><span>02</span> Crew</a></li>
+        <li><a href="technology-vehicle.html"><span>03</span> Technology</a></li>
+      </ul>
+    </nav>
+    <!-- Main Navbar -->
+  </header>
+  <!-- End Header Section========= -->
 
   So, you want to travel to
   Space
@@ -25,5 +40,7 @@
 
   Explore
 
+
+  <script src="./js/script.js"></script>
 </body>
 </html>
