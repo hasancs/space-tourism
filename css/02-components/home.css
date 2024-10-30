@@ -1,0 +1,59 @@
+/* Home Page=========*/
+.home {
+	background: url("../../img/home/background-home-mobile.jpg") no-repeat center / cover;
+}
+.home__title {
+	font-size: 1rem;
+	font-family: var(--ff-barlow-cond);
+	font-weight: var(--fw-regular);
+	color: hsl(var(--clr-blue-light));
+	text-transform: uppercase;
+	letter-spacing: 0.25rem;
+	text-align: center;
+}
+.home__title span {
+	margin-block: 1.25rem;
+	display: block;
+	font-size: 5rem;
+	font-family: var(--ff-bellefair);
+	line-height: 1.1;
+	color: hsl(var(--clr-white));
+	letter-spacing: normal;
+}
+.section__content {
+	font-size: 0.9375rem;
+	line-height: 1.8;
+	text-align: center;
+	color: hsl(var(--clr-blue-light));
+}
+
+@media (width >= 40em) {
+	.home {
+		background: url("../../img/home/background-home-tablet.jpg") no-repeat center / cover;
+	}
+}
+
+@media (width >= 48em) {
+	.section__content {
+		max-width: 512px;
+	}
+}
+
+@media (width >= 64em) {
+	.home {
+		background: url("../../img/home/background-home-desktop.jpg") no-repeat center / cover;
+	}
+	.home__title {
+		font-family: 28px;
+	}
+	.home__title span {
+		font-size: 144px;
+	}
+	.section__content {
+		font-size: 18px;
+	}
+	.home__title,
+	.section__content {
+		text-align: left;
+	}
+}

@@ -15,7 +15,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/hasancs/space-tourism)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://space-travel-log.netlify.app/)
 
 ## My process
 
@@ -30,7 +30,7 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/hasancs)
 - Github - [@hasancs](https://github.com/hasancs/)
 
 ## Acknowledgments

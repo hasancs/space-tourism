@@ -1,0 +1,37 @@
+/* 05. Container CSS=========*/
+.container {
+	--gap: 2rem;
+	place-items: center;
+	padding-inline: 1.5rem;
+	display: grid;
+	gap: var(--gap, 1rem);
+	grid-template-columns: 1fr;
+	height: 100%;
+}
+/* Responsive Query */
+@media (width >= 48em) {
+	.container {
+		padding-inline: 40px;
+	}
+}
+
+@media (width >= 64em) {
+	.container {
+		padding-inline: 0;
+		grid-template-columns: minmax(2rem, 1fr) repeat(2, minmax(0, 34.7rem)) minmax(2rem, 1fr);
+	}
+	.left-column {
+		grid-column: 2;
+	}
+	.right-column {
+		grid-column: 3;
+	}
+	.home__container {
+		padding-block-end: min(8rem, 10vh);
+		align-items: end;
+	}
+	.home__container .right-column {
+		justify-self: end;
+		padding-block-end: 2.4rem;
+	}
+}

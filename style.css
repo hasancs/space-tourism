@@ -1,17 +1,9 @@
 /*-----------------------------------------------------------------------------------
   Template Name: Frontend Mentor | Space tourism website
-  Template URI:
+  Template URI: https://space-travel-log.netlify.app/
   Author: Mahmudul Hasan
   Author URI: https://github.com/hasancs/
   Version: 1.0
-
-  Note: This is Main Style CSS File.
------------------------------------------------------------------------------------
-	CSS INDEX
-	===================
-    #. Fonts
-    #. Reset
-    #. Variables
 -----------------------------------------------------------------------------------*/
 
 /* Fonts========== */
@@ -23,5 +15,14 @@
 /* Reset========== */
 @import url("./css/01-global/reset.css");
 
+/* Button========== */
+@import url("./css/01-global/button.css");
+
+/* Container========== */
+@import url("./css/01-global/container.css");
+
 /* Navigation========== */
 @import url("./css/02-components/navigation.css");
+
+/* Home========== */
+@import url("./css/02-components/home.css");

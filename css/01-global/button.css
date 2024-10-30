@@ -1,0 +1,42 @@
+/* 04. Button=========*/
+.btn-lg {
+	--btn-block: 144px;
+	place-items: center;
+	display: inline-grid;
+	position: relative;
+	width: var(--btn-block);
+	height: var(--btn-block);
+	background: hsl(var(--clr-white));
+	border-radius: 50%;
+	font-size: clamp(1.125rem, 0.0263rem + 2.6316vw, 2rem);
+	font-family: var(--ff-bellefair);
+	color: hsl(var(--clr-blue-dark));
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: color 500ms ease-in-out;
+}
+.btn-lg::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	content: "";
+	background-color: hsl(var(--clr-white) / 0.25);
+	border-radius: 50%;
+	opacity: 0;
+	transition: opacity 500ms linear, transform 750ms ease-in-out;
+}
+.btn-lg:hover::after {
+	opacity: 0.5;
+	transform: scale(1.55);
+}
+.btn-lg:hover {
+	color: hsl(var(--clr-blue-dark) / 0.5);
+}
+
+@media (width >= 48em) {
+	.btn-lg {
+		--btn-block: 272px;
+	}
+}
