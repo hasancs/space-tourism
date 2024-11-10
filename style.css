@@ -32,3 +32,9 @@
 
 /* Destination========== */
 @import url("./css/02-components/destination.css");
+
+/* Crew========== */
+@import url("./css/02-components/crew.css");
+
+/* Technology========== */
+@import url("./css/02-components/technology.css");

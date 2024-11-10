@@ -1,4 +1,4 @@
-/* Home Page */
+/* Destination Page */
 .destination {
 	background: url("../../img/destination/background-destination-mobile.jpg") no-repeat center / cover;
 }
@@ -7,12 +7,16 @@
 	margin-block-start: 24px;
 }
 
-.destination__block {
+.destination__block,
+.destination__container picture {
 	display: none;
+	visibility: hidden;
 }
 
-.destination__block.active {
+.destination__block.active,
+.destination__container picture.active {
 	display: block;
+	visibility: visible;
 }
 .destination__details {
 	padding-block: 16px 24px;
@@ -45,10 +49,6 @@
 .destination__container picture {
 	max-width: 60%;
 	margin-inline: auto;
-	display: none;
-}
-.destination__container picture.active {
-	display: block;
 }
 
 /* for layout purpos 640px */

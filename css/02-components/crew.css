@@ -1,0 +1,18 @@
+/* Crew Page */
+.crew {
+	background: url("../../img/crew/background-crew-mobile.jpg") no-repeat center / cover;
+}
+
+/* for layout purpos 640px */
+@media (width >= 40em) {
+	.crew {
+		background: url("../../img/crew/background-crew-tablet.jpg") no-repeat center / cover;
+	}
+}
+
+/* Desktop 1024px */
+@media (width >= 64em) {
+	.crew {
+		background: url("../../img/crew/background-crew-desktop.jpg") no-repeat center / cover;
+	}
+}
