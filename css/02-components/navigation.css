@@ -14,17 +14,17 @@
 
 /* Navigation toggle btn */
 .toggleNavigation {
+	aspect-ratio: 1;
 	position: absolute;
 	z-index: 1800;
 	right: 1.5rem;
+	width: 1.5rem;
 	background: transparent;
 	background-image: url("../../img/shared/icon-hamburger.svg");
-	background-position: right;
 	background-repeat: no-repeat;
+	background-position: right;
 	cursor: pointer;
 	border: 0;
-	width: 1.5rem;
-	aspect-ratio: 1;
 }
 .toggleNavigation.close {
 	background-image: url("../../img/shared/icon-close.svg");
@@ -35,17 +35,17 @@
 
 .navigation {
 	--nav-gap: 1.625rem;
+	-webkit-backdrop-filter: blur(1.125rem);
+	backdrop-filter: blur(1.125rem);
 	display: flex;
 	flex-direction: column;
 	gap: var(--nav-gap, 1rem);
 	background-color: hsl(var(--clr-white) / 0.05);
-	-webkit-backdrop-filter: blur(1.125rem);
-	backdrop-filter: blur(1.125rem);
 }
 .navigation li {
 	--border-clr-opacity: 0;
-	border-right: 0.1875rem solid hsl(var(--clr-white) / var(--border-clr-opacity));
 	transition: border-color 500ms ease-in-out;
+	border-right: 0.1875rem solid hsl(var(--clr-white) / var(--border-clr-opacity));
 }
 .navigation li.active {
 	--border-clr-opacity: 1 !important;
@@ -56,32 +56,32 @@
 
 /* Main navigation */
 .navigation li a {
-	font-family: var(--ff-barlow-cond);
-	font-size: 1rem;
-	font-weight: var(--fw-regular);
-	letter-spacing: 0.125rem;
-	text-transform: uppercase;
-	color: var(--clr-white);
 	display: block;
+	font-size: 1rem;
+	font-family: var(--ff-barlow-cond);
+	font-weight: var(--fw-regular);
+	color: var(--clr-white);
+	text-transform: uppercase;
+	letter-spacing: 0.125rem;
 }
 .navigation li a span {
+	padding-inline-end: 0.75rem;
 	font-weight: var(--fw-bold);
 	letter-spacing: 0.169rem;
-	padding-inline-end: 0.75rem;
 }
 
 /* Responsive Query */
 @media (width <= 47.938em) {
 	.navigation {
-		position: fixed;
-		height: 100vh;
-		z-index: 999;
-		width: 255px;
-		top: 0;
-		right: 0;
 		padding-block-start: 8.375rem;
 		padding-inline-start: 2rem;
+		position: fixed;
+		z-index: 999;
+		top: 0;
+		right: 0;
 		transform: translateX(100%);
+		width: 255px;
+		height: 100vh;
 		transition: transform 500ms ease-in-out;
 	}
 }
@@ -95,13 +95,13 @@
 	}
 	.navigation {
 		--nav-gap: 3rem;
-		flex-direction: row;
 		padding-inline: clamp(1.5rem, 0.5909rem + 4.5455vw, 4rem);
+		flex-direction: row;
 	}
 	.navigation li {
+		padding-block: 2.156rem;
 		border-right: 0;
 		border-bottom: 0.1875rem solid hsl(var(--clr-white) / var(--border-clr-opacity));
-		padding-block: 2.156rem;
 	}
 }
 
