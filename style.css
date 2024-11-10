@@ -21,8 +21,14 @@
 /* Container========== */
 @import url("./css/01-global/container.css");
 
+/* Tab========== */
+@import url("./css/01-global/tab.css");
+
 /* Navigation========== */
 @import url("./css/02-components/navigation.css");
 
 /* Home========== */
 @import url("./css/02-components/home.css");
+
+/* Destination========== */
+@import url("./css/02-components/destination.css");

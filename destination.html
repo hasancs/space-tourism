@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <title>Frontend Mentor | Space tourism website</title>
+
+  <!-- Css Files========= -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="destination">
+  <header class="header">
+    <div class="logo">
+      <a href="index.html"><img src="./img/shared/logo.svg" alt="Space tourism"></a>
+    </div>
+    <!-- Site Logo -->
+
+    <button class="toggleNavigation" id="navbarToggle"><span class="sr-only">Menu</span></button>
+    <!-- Mobile Navigation Toggle -->
+
+    <nav>
+      <ul class="navigation" id="mainMenu">
+        <li><a href="index.html"><span>00</span> Home</a></li>
+        <li class="active"><a href="destination.html"><span>01</span> Destination</a></li>
+        <li><a href="crew-commander.html"><span>02</span> Crew</a></li>
+        <li><a href="technology-vehicle.html"><span>03</span> Technology</a></li>
+      </ul>
+    </nav>
+    <!-- Main Navbar -->
+  </header>
+  <!-- End Header Section========= -->
+
+  <main class="container destination__container">
+    <h1 class="page-title destination__title">01 Pick your destination</h1>
+    <!-- Page Title -->
+
+    <div class="destination__img">
+      <picture class="moon active">
+        <source srcset="./img/destination/image-moon.webp" type="image/webp">
+        <img src="./img/destination/image-moon.png" alt="Moon">
+      </picture>
+    </div>
+    <!-- Destination Images -->
+
+    <div class="destination__tabs">
+      <ul class="tab-list">
+        <li><a class="active" href="#">Moon</a></li>
+        <li><a href="#">Mars</a></li>
+        <li><a href="#">Europa</a></li>
+        <li><a href="#">Titan</a></li>
+      </ul>
+    </div>
+    <!-- Destination Tab -->
+
+    <article class="destination__block active">
+      <h2 class="title-2"> Moon </h2>
+      <p class="destination__details section__content">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+
+      <div class="destination__statistics flex">
+        <div class="flex destination__info">
+          <span class="avg-dest">Avg. distance</span>
+          <span class="length">384,400 km</span>
+        </div>
+
+        <div class="flex destination__info">
+          <span class="avg-dest">Est. travel time</span>
+          <span class="length">3 days</span>
+        </div>
+      </div>
+    </article>
+    <!-- End Destination Moon -->
+    <!-- Destination Content -->
+  </main>
+  <!-- End page container========= -->
+
+
+
+
+  <!-- JS Files========= -->
+  <script src="./js/script.js"></script>
+</body>
+</html>

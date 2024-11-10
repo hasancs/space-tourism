@@ -12,10 +12,21 @@
 		"tab"
 		"content";
 }
+
+/* Home page layout */
 .home__container {
 	grid-template-areas:
 		"home-content"
 		"home-btn";
+}
+
+/* Destination page layout */
+.destination__container {
+	grid-template-areas:
+		"title"
+		"img"
+		"tab"
+		"text-content";
 }
 
 /* Responsive Query */
@@ -31,6 +42,8 @@
 		grid-template-columns: minmax(2rem, 1fr) repeat(2, minmax(0, 33.75rem)) minmax(2rem, 1fr);
 		place-items: start;
 	}
+
+	/* Home page layout */
 	.home__container {
 		grid-template-areas: " . home-content home-btn . ";
 		min-block-size: 100%;
@@ -46,5 +59,26 @@
 	}
 	.home__container .home__btn {
 		padding-block-end: 2.4rem;
+	}
+
+	/* Destination page layout */
+	.destination__container {
+		grid-template-areas:
+			" . title title . "
+			" . img tab . "
+			" . img text-content . ";
+	}
+	.destination__title {
+		justify-self: start;
+		grid-area: title;
+	}
+	.destination__img {
+		grid-area: img;
+	}
+	.destination__tabs {
+		grid-area: tab;
+	}
+	.destination__block {
+		grid-area: text-content;
 	}
 }
