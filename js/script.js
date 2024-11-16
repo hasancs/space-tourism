@@ -11,9 +11,9 @@ if (navbarToggle && mainMenu) {
 
 // Tab Js------
 document.addEventListener("DOMContentLoaded", () => {
-	const tabs = document.querySelectorAll(".tab-list a");
-	const tabContents = document.querySelectorAll(".destination__block");
-	const tabImages = document.querySelectorAll("picture");
+	const tabs = document.querySelectorAll(".tab-link");
+	const tabContents = document.querySelectorAll(".tab-content");
+	const tabImages = document.querySelectorAll(".tab-img");
 
 	// Toggle active class
 	function toggleActiveClasses(activeIndex, ...elements) {

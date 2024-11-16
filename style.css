@@ -207,14 +207,12 @@ ul {
 		"text-content";
 }
 
-/* Tab CSS========== */
-.tab-list {
-	/* margin-block-end: 3.125rem; */
-	display: flex;
+/* Tab CSS for destination========== */
+.destination__tabs .tab-list {
 	justify-content: center;
 	gap: 2rem;
 }
-.tab-list li a {
+.destination__tabs .tab-link {
 	--border-clr-opacity: 0;
 	padding-block-end: 0.8125rem;
 	transition: border-color 500ms ease-in-out, color 500ms ease-in-out;
@@ -225,14 +223,14 @@ ul {
 	text-transform: uppercase;
 	letter-spacing: 0.125rem;
 }
-.tab-list li a.active {
+.destination__tabs .tab-link.active {
 	--border-clr-opacity: 1;
 }
-.tab-list li a.active,
-.tab-list li a:hover {
+.destination__tabs .tab-link.active,
+.destination__tabs .tab-link:hover {
 	color: hsl(var(--clr-white));
 }
-.tab-list li a:hover {
+.destination__tabs .tab-link:hover {
 	--border-clr-opacity: 0.5;
 }
 
@@ -328,15 +326,13 @@ ul {
 .destination__title {
 	margin-block-start: 24px;
 }
-.destination__block,
-.destination__container picture {
+.tab-content,
+.tab-img {
 	display: none;
-	visibility: hidden;
 }
-.destination__block.active,
-.destination__container picture.active {
+.tab-content.active,
+.tab-img.active {
 	display: block;
-	visibility: visible;
 }
 .destination__details {
 	padding-block: 16px 24px;
