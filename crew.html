@@ -36,17 +36,38 @@
     <h1 class="page-title crew__title"><span>02</span> MEET YOUR CREW</h1>
     <!-- Page Title -->
 
-    <article class="crew__content">
+    <article class="tab-content crew__content active">
       <h5 class="subtitle">Commander</h5>
       <h2 class="title-3">Douglas Hurley</h2>
       <p class="section__content">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
     </article>
     <!-- Crew Commander content -->
+
+    <article class="tab-content crew__content">
+      <h5 class="subtitle">Mission Specialist </h5>
+      <h2 class="title-3">MARK SHUTTLEWORTH</h2>
+      <p class="section__content">Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.</p>
+    </article>
+    <!-- Crew Mission Specialist content -->
+
+    <article class="tab-content crew__content">
+      <h5 class="subtitle">PILOT</h5>
+      <h2 class="title-3">Victor Glover</h2>
+      <p class="section__content">Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer.</p>
+    </article>
+    <!-- Crew PILOT content -->
+
+    <article class="tab-content crew__content">
+      <h5 class="subtitle">Flight Engineer</h5>
+      <h2 class="title-3">Anousheh Ansari</h2>
+      <p class="section__content">Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space.</p>
+    </article>
+    <!-- Crew Flight Engineer content -->
     <!-- Crew content -->
 
-    <ul class=" dot-circle flex crew__dots">
+    <ul class=" tab-list dot-circle flex crew__dots">
       <li>
-        <a href="#" class="dot-circle-btn">
+        <a href="#" class="dot-circle-btn tab-link active">
           <span class="sr-only">Commander</span>
         </a>
       </li>
@@ -69,9 +90,24 @@
     <!-- Dot Circle -->
 
     <div class="crew__img">
-      <picture class="commander">
+      <picture class="tab-img commander active">
         <source srcset="./img/crew/image-douglas-hurley.webp" type="image/webp">
         <img src="./img/crew/image-douglas-hurley.png" alt="douglas-hurley">
+      </picture>
+
+      <picture class="tab-img mission-specialist">
+        <source srcset="./img/crew/image-mark-shuttleworth.webp" type="image/webp">
+        <img src="./img/crew/image-mark-shuttleworth.png" alt="Mars">
+      </picture>
+
+      <picture class="tab-img pilot">
+        <source srcset="./img/crew/image-victor-glover.webp" type="image/webp">
+        <img src="./img/crew/image-victor-glover.png" alt="Europa">
+      </picture>
+
+      <picture class="tab-img flight-engineer">
+        <source srcset="./img/crew/image-anousheh-ansari.webp" type="image/webp">
+        <img src="./img/crew/image-anousheh-ansari.png" alt="Titan">
       </picture>
     </div>
     <!-- Crew Images -->
