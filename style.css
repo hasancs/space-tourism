@@ -91,6 +91,17 @@ ul {
 .flex {
 	display: flex;
 }
+.title-1,
+.title-2,
+.title-3,
+.subtitle {
+	line-height: 1.1;
+	color: hsl(var(--clr-white));
+	font-family: var(--ff-bellefair);
+	font-weight: var(--fw-regular);
+	text-transform: uppercase;
+	text-align: center;
+}
 .title-1 {
 	margin-block: 20px;
 	display: block;
@@ -120,17 +131,6 @@ ul {
 	padding-inline-end: 24px;
 	color: hsl(var(--clr-white) / 0.5);
 	font-weight: var(--fw-bold);
-}
-.title-1,
-.title-2,
-.title-3,
-.subtitle {
-	line-height: 1.1;
-	color: hsl(var(--clr-white));
-	font-family: var(--ff-bellefair);
-	font-weight: var(--fw-regular);
-	text-transform: uppercase;
-	text-align: center;
 }
 .section__content {
 	font-size: clamp(0.9375rem, 0.8523rem + 0.3636vw, 1.125rem);
@@ -207,6 +207,15 @@ ul {
 		"text-content";
 }
 
+/* Crew page layout */
+.crew__container {
+	grid-template-areas:
+		"title"
+		"text-content"
+		"tab"
+		"img";
+}
+
 /* Tab CSS for destination========== */
 .destination__tabs .tab-list {
 	justify-content: center;
@@ -232,6 +241,26 @@ ul {
 }
 .destination__tabs .tab-link:hover {
 	--border-clr-opacity: 0.5;
+}
+
+/* Crew Tabs Css */
+.dot-circle {
+	gap: 1rem;
+	justify-content: center;
+}
+.dot-circle-btn {
+	--circle: 0.625rem;
+	background: hsl(var(--clr-white) / 0.25);
+	height: var(--circle);
+	width: var(--circle);
+	border-radius: 50%;
+	border: 0;
+	display: block;
+	transition: background-color 500ms ease-in-out;
+}
+.dot-circle-btn.active,
+.dot-circle-btn:hover {
+	background-color: hsl(var(--clr-white));
 }
 
 /* Header CSS========= */
@@ -323,7 +352,7 @@ ul {
 .destination {
 	background: url("./img/destination/background-destination-mobile.jpg") no-repeat center / cover;
 }
-.destination__title {
+.page-title {
 	margin-block-start: 24px;
 }
 .tab-content,
@@ -362,7 +391,8 @@ ul {
 	font-size: 28px;
 	color: hsl(var(--clr-white));
 }
-.destination__container picture {
+.destination__container picture,
+.crew__img picture {
 	max-width: 60%;
 	margin-inline: auto;
 }
@@ -370,6 +400,9 @@ ul {
 /* Crew CSS========== */
 .crew {
 	background: url("./img/crew/background-crew-mobile.jpg") no-repeat center / cover;
+}
+.crew__content .title-3 {
+	margin-block-end: 24px;
 }
 
 /* Technology CSS========== */
@@ -406,7 +439,7 @@ ul {
 	.destination__statistics {
 		flex-direction: row;
 	}
-	.destination__title {
+	.page-title {
 		margin-block-start: 40px;
 	}
 
@@ -468,8 +501,14 @@ ul {
 	}
 
 	.tab-list {
-		/* margin-block-end: 4.375rem; */
 		justify-content: start;
+	}
+
+	.dot-circle {
+		gap: 40px;
+	}
+	.dot-circle-btn {
+		--circle: 15px;
 	}
 
 	/* Header CSS */
@@ -539,9 +578,10 @@ ul {
 			" . img tab . "
 			" . img text-content . ";
 	}
-	.destination__title {
+	.page-title {
 		justify-self: start;
 		grid-area: title;
+		margin-block-start: 48px;
 	}
 	.destination__img {
 		grid-area: img;
@@ -555,10 +595,8 @@ ul {
 	.destination {
 		background: url("./img/destination/background-destination-desktop.jpg") no-repeat center / cover;
 	}
-	.destination__title {
-		margin-block-start: 48px;
-	}
-	.destination__container picture {
+	.destination__container picture,
+	.crew__img picture {
 		max-width: 90%;
 	}
 	.destination__details {
@@ -577,6 +615,27 @@ ul {
 	/* Crew page css========= */
 	.crew {
 		background: url("./img/crew/background-crew-desktop.jpg") no-repeat center / cover;
+	}
+	.crew__container {
+		grid-template-areas:
+			" . title title . "
+			" . text-content img . "
+			" . tab img . ";
+		align-items: center;
+	}
+	.crew__title {
+		justify-self: start;
+		grid-area: title;
+	}
+	.crew__img {
+		grid-area: img;
+		justify-self: end;
+	}
+	.crew__dots {
+		grid-area: tab;
+	}
+	.crew__content {
+		grid-area: text-content;
 	}
 
 	/* Technology page css========= */
